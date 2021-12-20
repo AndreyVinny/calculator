@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<main>
+    <p>Для получения результата нажмите знак равно (=)</p>
+    <form id='form' name='calculation' onsubmit="return false;">
+        <div class="form_blok">
+            <label for="firstNumber">
+                <ruby><input type="number" id='firstNumber'><rt>Первое число</rt></ruby>
+            </label>
+            <select name="" id="operant">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">x</option>
+                <option value="/">÷</option>
+            </select>
+            <label for="secondNumber">
+                <ruby><input type="number" id='secondNumber'><rt>Второе число</rt></ruby>
+            </label>
+            <input type="submit" value="=" id='result'>
+            <div class="answer">
+                <ruby><div class="answer_text">0</div><rt>Результат</rt></ruby>
+            </div>
+        </div>
+        <input id="reset_form" type="button" value="Cбросить данные" name='reset_form'>
+    </form>
+</main>
+<body>
+    <script src="./script.js"></script>
+</body>
+</html>

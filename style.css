@@ -1,0 +1,92 @@
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline:none;
+    text-align: right;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+input:nth-child(3) {
+    text-align: left;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#result {
+    border-bottom: 0;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#result:hover,
+#operant:hover{
+    background: rgb(228,228,228);
+    background: radial-gradient(circle, rgba(228,228,228,1) 0%, rgba(255,255,255,1) 74%);
+}
+.answer {
+    border-bottom: 1px solid #000;
+    min-width: 30px;
+    text-align: right;
+    font-size: 20px;
+}
+
+#operant {
+    font-size: 22px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+    padding: 0px 5px;
+}
+
+.form_blok {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#reset_form {
+    width: 180px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    background-color: rgb(28, 28, 28);
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#reset_form:hover {
+    background-color: rgb(138, 136, 136);
+    border-color: rgb(138, 136, 136);
+    color: rgb(28, 28, 28);
+}
+
+rt {
+    text-align: right;
+}
